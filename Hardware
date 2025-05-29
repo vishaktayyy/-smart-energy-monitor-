@@ -1,0 +1,40 @@
+# Hardware Documentation
+
+This directory contains all hardware-related files for the Smart Energy Monitoring System.
+
+## Contents
+
+### Schematics
+- Main circuit diagram
+- Sensor connection diagrams
+- Power supply circuit
+
+### PCB Design
+- KiCad project files
+- Gerber files for manufacturing
+- Bill of Materials (BOM)
+
+### 3D Models
+- Enclosure design files (STL format)
+- Mounting brackets
+- Sensor housing
+
+## Component List
+
+| Component | Quantity | Description |
+|-----------|----------|-------------|
+| ESP32 DevKit | 1 | Main microcontroller |
+| ACS712 Current Sensor | 3 | 30A current measurement |
+| ZMPT101B Voltage Sensor | 1 | AC voltage measurement |
+| 16x2 LCD Display | 1 | Local readings display |
+| 5V Power Supply | 1 | Power for the system |
+| PCB | 1 | Custom designed circuit board |
+| Enclosure | 1 | 3D printed protective case |
+
+## Assembly Instructions
+
+Detailed assembly instructions with photos will be added soon.
+
+## Safety Considerations
+
+⚠️ **WARNING**: This project involves working with mains electricity which can be dangerous. Always ensure power is disconnected before working on the circuit. Consider consulting a licensed electrician for installation.
