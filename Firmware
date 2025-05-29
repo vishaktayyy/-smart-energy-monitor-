@@ -1,0 +1,57 @@
+# Firmware Documentation
+
+This directory contains the firmware for the ESP32 microcontroller that powers the Smart Energy Monitoring System.
+
+## Overview
+
+The firmware handles:
+- Reading current and voltage sensors
+- Calculating power consumption metrics
+- WiFi connectivity
+- MQTT communication with the server
+- Local display output
+- Web interface for configuration
+
+## Development Environment
+
+This project uses PlatformIO for development. To set up your environment:
+
+1. Install [Visual Studio Code](https://code.visualstudio.com/)
+2. Install the [PlatformIO extension](https://platformio.org/install/ide?install=vscode)
+3. Clone this repository
+4. Open the project folder in VS Code
+5. PlatformIO will automatically install dependencies
+
+## Project Structure
+
+- `src/` - Main source files
+- `include/` - Header files
+- `lib/` - Custom libraries
+- `platformio.ini` - Project configuration
+
+## Building and Flashing
+
+To build the firmware:
+```bash
+platformio run
+
+To upload to your ESP32:
+
+platformio run --target upload
+
+Configuration
+
+The firmware can be configured by editing the 
+config.h
+ file or through the web interface after initial setup.
+
+Dependencies
+
+https://github.com/tzapu/WiFiManager
+ - For WiFi configuration
+https://github.com/knolleary/pubsubclient
+ - For MQTT communication
+https://github.com/openenergymonitor/EmonLib
+ - For energy monitoring calculations
+https://arduinojson.org/
+ - For JSON parsing and creation
