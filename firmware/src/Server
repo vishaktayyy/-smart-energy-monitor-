@@ -1,0 +1,57 @@
+Server Documentation
+
+This directory contains all server-side components for the Smart Energy Monitoring System.
+
+Overview
+
+The server stack consists of:
+
+MQTT Broker
+ (Mosquitto) - For message handling between devices and server
+Node-RED
+ - For data processing and flow control
+InfluxDB
+ - Time-series database for storing energy data
+Grafana
+ - For visualization and dashboards
+Setup Instructions
+
+Using Docker Compose (Recommended)
+
+Install Docker and Docker Compose on your server
+Navigate to this directory
+Run 
+docker-compose up -d
+Access the services:
+Node-RED: http://your-server-ip:1880
+Grafana: http://your-server-ip:3000
+MQTT Broker: your-server-ip:1883
+Manual Installation
+
+Instructions for manual installation of each component are available in the respective subdirectories.
+
+Configuration
+
+MQTT Topics
+
+The system uses the following MQTT topics:
+
+energy/device/[device_id]/power
+ - Real-time power readings
+energy/device/[device_id]/voltage
+ - Voltage readings
+energy/device/[device_id]/current
+ - Current readings
+energy/device/[device_id]/status
+ - Device status updates
+energy/device/[device_id]/config
+ - Configuration messages
+Data Retention
+
+By default, InfluxDB is configured to retain data for 90 days. This can be adjusted in the InfluxDB configuration.
+
+Backup
+
+Automated backup scripts are included in the 
+backup
+ directory. Configure cron jobs to run these regularly.
