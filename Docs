@@ -1,0 +1,30 @@
+Documentation
+
+This directory contains comprehensive documentation for the Smart Energy Monitoring System.
+
+Contents
+
+Images
+ - Diagrams, screenshots, and photos of the system
+Setup Guide
+ - Step-by-step installation and configuration instructions
+API Documentation
+ - Details on the REST API and MQTT interfaces
+User Manual
+ - Instructions for end users
+Quick Start
+
+For a quick start guide, see the 
+./setup_guide/README.md
+.
+
+API Reference
+
+The system provides both REST API and MQTT interfaces for integration with other systems. See the 
+./api/README.md
+ for details.
+
+Troubleshooting
+
+Common issues and their solutions are documented in the 
+./troubleshooting.md
