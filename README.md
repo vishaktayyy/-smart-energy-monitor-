@@ -1,4 +1,4 @@
-# -smart-energy-monitor-
+# Smart Energy Monitor
 An IoT-based power monitoring system that tracks electricity usage in real-time, helping users identify energy consumption patterns and reduce electricity bills.
 
 ## Features
